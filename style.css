@@ -1,0 +1,47 @@
+/*-----Global variables------*/
+/*colors*/
+/*fonts*/
+/*measures*/
+.tasks {
+  margin-bottom: 2rem;
+  text-align: left;
+  color: black;
+  font-style: Georgia, serif;
+  height: fit-content;
+  font-size: 1.5rem; }
+  .tasks .tasks__first {
+    background-color: #fe9998; }
+  .tasks .tasks__second {
+    background-color: #aeae4a; }
+  .tasks .tasks__third {
+    background-color: #0db347; }
+  .tasks .tasks__first, .tasks .tasks__second, .tasks .tasks__third {
+    margin-bottom: 5px;
+    padding: 5px; }
+
+h1 {
+  text-align: center;
+  color: #5656a8; }
+
+h2 {
+  text-align: center;
+  color: #6f6fa9; }
+
+out {
+  margin: 20px;
+  text-align: left;
+  color: black;
+  font-style: Georgia, serif;
+  font-size: 1.5rem; }
+  out out-1 {
+    background-color: #fe9998; }
+  out out-2 {
+    background-color: #aeae4a; }
+  out out-3 {
+    background-color: #0db347; }
+
+div p, div input, div button, div p, div output {
+  display: inline; }
+
+.bg-orange {
+  background-color: orange; }
