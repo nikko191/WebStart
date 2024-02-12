@@ -1,2 +1,2 @@
-// ����� ����� �����-�� ���������
-// There is some new changes of second coder
+﻿// ����� ����� �����-�� ���������
+// There ARE some new changes of second coder
