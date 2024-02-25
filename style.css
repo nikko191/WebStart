@@ -1,0 +1,65 @@
+/*====Global variables====*/
+/*colors*/
+/*fonts*/
+/*measures*/
+/*====Body elements====*/
+/*headers*/
+h1 {
+  text-align: center;
+  color: #5656a8; }
+
+h2 {
+  text-align: center;
+  color: #6f6fa9; }
+
+/*task' paragraphs*/
+.tasks {
+  display: block;
+  text-align: left;
+  color: black;
+  font-style: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px; }
+  .tasks__first {
+    background-color: #fc7d7a; }
+  .tasks__second {
+    background-color: #aeae4a; }
+  .tasks__third {
+    background-color: #0db347; }
+
+/*inputs*/
+.form {
+  display: block;
+  margin: 5px; }
+  .form__first {
+    background-color: #fc7d7a; }
+  .form__second {
+    background-color: #aeae4a; }
+  .form__third {
+    background-color: #0db347; }
+
+.prompt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem; }
+  .prompt .tasks__first {
+    background-color: #fc7d7a; }
+  .prompt .tasks__second {
+    background-color: #aeae4a; }
+  .prompt .tasks__third {
+    background-color: #0db347; }
+
+/*buttons*/
+/*ouputs*/
+out {
+  margin: 20px;
+  text-align: left;
+  color: black;
+  font-style: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
+  out-1 {
+    background-color: #fc7d7a; }
+  out-2 {
+    background-color: #aeae4a; }
+  out-3 {
+    background-color: #0db347; }
