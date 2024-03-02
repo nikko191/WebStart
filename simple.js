@@ -36,7 +36,6 @@ document.querySelector('.divs__second').onclick = () => {
 
 }
 
-
 // function pageEvents__js2_18() {
 
 //     let a1 = [4,5,6,7,12,34,56,78,90,11];
@@ -195,7 +194,6 @@ document.querySelector('.divs__second').onclick = () => {
 //     console.log(s2);
 //     input_3.value = '';
 // }
-
 
 // const d1_const = [33,'best', 66, 'best'];
 // const a1 = {
