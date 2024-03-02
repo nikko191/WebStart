@@ -1,0 +1,149 @@
+/*====Global variables====*/
+/*colors*/
+$color-h1: rgb(86, 86, 168);
+$color-h2: rgb(111, 111, 169);
+$color-p: black;
+$color-prompt: rgb(144, 233, 144);
+$color-one: rgb(252, 125, 122);
+$color-two: rgb(174, 174, 74);
+$color-three: rgb(64, 227, 121);
+
+/*fonts*/
+$font-prompt: Verdana, Geneva, Tahoma, sans-serif;
+$font-p: Arial, Helvetica, sans-serif;
+$font-out: 'Arial Narrow Bold', sans-serif;
+
+/*measures*/
+$rem: 10px;
+$p-margin: 2rem;
+
+/*====Body elements====*/
+
+/*headers*/
+h1 {
+    text-align: center;
+    color: $color-h1;
+};
+
+h2 {
+    text-align: center;
+    color: $color-h2;
+};
+
+/*task' paragraphs*/
+.tasks, .outs {
+    display: block;
+    text-align: left;
+    color: $color-p;
+    font-style: $font-p;
+    // height: fit-content;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 5px;
+
+
+    &__first {
+        background-color: $color-one;
+
+    }
+
+    &__second {
+        background-color: $color-two;
+
+    };
+
+    &__third {
+        background-color: $color-three;
+
+    };
+
+};
+
+.outs {
+    font-family: $font-out;
+        &__first, &__second, &__third {
+            display: block;
+            margin: 5px;
+            text-align: center;
+    }
+}
+/*inputs*/
+.form {
+    // background-color: $color-prompt;
+    display: block;
+    margin: 5px;
+
+    &__first {
+        background-color: $color-one;
+    };
+
+    &__second {
+        background-color: $color-two;
+    };
+
+    &__third {
+        background-color: $color-three;
+    };
+
+}
+
+.prompt {
+    // background-color: $color-prompt;
+    font-family: $font-prompt;
+    font-size: 1rem;
+
+    .tasks {
+    
+        &__first {
+            background-color: $color-one;
+    
+        }
+    
+        &__second {
+            background-color: $color-two;
+    
+        };
+    
+        &__third {
+            background-color: $color-three;
+    
+        };
+    
+    };
+}
+
+/*divs*/
+
+.divs {
+    display: inline-block;
+    margin: 5px;
+    font-family: $font-p;
+
+        &__first {
+            background-color: $color-one;
+            
+        }
+    
+        &__second {
+            background-color: $color-two;
+    
+        };
+    
+        &__third {
+            background-color: $color-three;
+    
+        };
+
+        &__first, &__second, &__third {
+            height: 5rem;
+            width: 5rem;
+            display: inline-block;
+            overflow: hidden;
+            text-align: leftr;
+            padding: 6px;
+
+        }
+
+
+
+    }

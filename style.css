@@ -1,0 +1,76 @@
+/*====Global variables====*/
+/*colors*/
+/*fonts*/
+/*measures*/
+/*====Body elements====*/
+/*headers*/
+h1 {
+  text-align: center;
+  color: #5656a8; }
+
+h2 {
+  text-align: center;
+  color: #6f6fa9; }
+
+/*task' paragraphs*/
+.tasks, .outs {
+  display: block;
+  text-align: left;
+  color: black;
+  font-style: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px; }
+  .tasks__first, .outs__first {
+    background-color: #fc7d7a; }
+  .tasks__second, .outs__second {
+    background-color: #aeae4a; }
+  .tasks__third, .outs__third {
+    background-color: #40e379; }
+
+.outs {
+  font-family: "Arial Narrow Bold", sans-serif; }
+  .outs__first, .outs__second, .outs__third {
+    display: block;
+    margin: 5px;
+    text-align: center; }
+
+/*inputs*/
+.form {
+  display: block;
+  margin: 5px; }
+  .form__first {
+    background-color: #fc7d7a; }
+  .form__second {
+    background-color: #aeae4a; }
+  .form__third {
+    background-color: #40e379; }
+
+.prompt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem; }
+  .prompt .tasks__first {
+    background-color: #fc7d7a; }
+  .prompt .tasks__second {
+    background-color: #aeae4a; }
+  .prompt .tasks__third {
+    background-color: #40e379; }
+
+/*divs*/
+.divs {
+  display: inline-block;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .divs__first {
+    background-color: #fc7d7a; }
+  .divs__second {
+    background-color: #aeae4a; }
+  .divs__third {
+    background-color: #40e379; }
+  .divs__first, .divs__second, .divs__third {
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    overflow: hidden;
+    text-align: leftr;
+    padding: 6px; }
