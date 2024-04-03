@@ -1,5 +1,6 @@
 const input_1 = document.querySelector('.i-1');
 const input_2 = document.querySelector('.i-2');
+const input_3 = document.querySelector('.i-3');
 const button_1 = document.querySelector('.b-1');
 const button_2 = document.querySelector('.b-2');
 const button_3 = document.querySelector('.b-3');
@@ -12,29 +13,134 @@ console.log(`-----js script is included------`); //cutting const's zone
 
 pageEvents();
 
-function pageEvents () {
-
-document.querySelector('.divs__first').onclick = () => {
-    document.querySelector('.out-1').textContent = document.querySelector('.divs__first').textContent;
-}
-
-document.querySelector('.divs__second').onclick = () => {
-    function getKey(event) {
-        if (event.key == 'Alt') {
-            document.querySelector('.out-2').textContent = true;
-            return true
-        }
-        else {
-            document.querySelector('.out-2').textContent = false;
-            return false
-        }
-
+function pageEvents() {
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
     }
-    document.onkeyup = getKey;
+
+    button_1.onclick = () =>  {
+        out_1.textContent = getRandomInt(117, 132);
+    }
+
+    console.log ('Please input min-max numbers in HTML-forms for the first and the second tasks')
+    button_2.onclick = () =>  {
+        let minim = parseInt(input_1.value);
+        let maxim = parseInt(input_2.value);
+        out_2.textContent = getRandomInt(minim, maxim);
+    }
+
+    function hello() {}; function e2021() {};
 
 }
 
-}
+// function pageEvents__js2__23() {
+//     // localStorage.setItem('data', 5);
+//     // console.log(localStorage.getItem('data'));
+//     // const a = [3, 4, 5];
+//     // localStorage.setItem('a', JSON.stringify(a));
+//     // let b = localStorage.getItem('a');
+//     // console.log(b);
+//     // b = JSON.parse(b);
+//     // console.log(b);
+//     // console.log(b[0])
+//     //----------------------------------
+
+//     button_1.onclick = function t1() {
+//         localStorage.setItem('5', 11);
+//     }
+
+//     button_2.onclick = function t2() {
+//         localStorage.setItem('a2', JSON.stringify([7, 6, 5]))
+//     }
+
+//     button_3.onclick = function t3() {
+//         let b = localStorage.getItem('a2');
+//         console.log(b);
+//         b = JSON.parse(b);
+//         console.log(b)
+//     }
+// }
+
+
+// function pageEvents__js2__20() {
+
+//     function task_first() {
+//         out_1.onclick = () => {
+//             if (input_1.value != '') {
+//             out_1.textContent = input_1.value;
+//             }
+//             else {
+//                 out_1.textContent = '. . .';
+//             }
+//         }
+
+//     }
+
+//     input_2.onkeypress = (event) => {
+//             console.log(`The keycode is ${event.keyCode}. Everything alright...`)
+//             out_2.textContent = event.key;
+//     }
+
+//     input_3.onkeypress = (event) => {
+//         let keyValue = event.keyCode;
+//         console.log(`The keycode is ${event.keyCode}. Everything alright...`);
+//         if ((keyValue > 47)&&(keyValue < 58)) { out_3.textContent = false }
+//         else if ((keyValue > 96)&&(keyValue < 123)) { out_3.textContent = true }
+//         else { out_3.textContent = '. . .'}
+//     }
+// }
+
+// document.querySelector('.divs__second').onclick = () => {
+//     function getKey(event) {
+//         if (event.key == 'Alt') {
+//             document.querySelector('.out-2').textContent = true;
+//             return true
+//         }
+//         else {
+//             document.querySelector('.out-2').textContent = false;
+//             return false
+//         }
+
+//     }
+//     document.onkeyup = getKey;
+
+// function pageEvents__js2__19 () {
+
+// document.querySelector('.divs__first').onclick = () => {
+//     document.querySelector('.out-1').textContent = document.querySelector('.divs__first').textContent;
+// }
+
+// document.querySelector('.divs__second').onclick = () => {
+//     function getKey(event) {
+//         if (event.key == 'Alt') {
+//             document.querySelector('.out-2').textContent = true;
+//             return true
+//         }
+//         else {
+//             document.querySelector('.out-2').textContent = false;
+//             return false
+//         }
+
+//     }
+//     document.onkeyup = getKey;
+
+// }
+
+// document.querySelector('.divs__third').addEventListener('click', blockWidth);
+
+// let w = parseInt(window.getComputedStyle(document.querySelector('.divs__third')).width);
+
+// function blockWidth() {
+//     w += 5;
+//     document.querySelector('.divs__third').style.width = w + 'px';
+//     console.log(w);
+//     console.log(`actual width = ${w}px`)
+//     console.log(`width = ${document.querySelector('.divs__third').style.width}px`)
+// }
+
+// }
 
 // function pageEvents__js2_18() {
 

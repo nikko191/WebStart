@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>SPRINT 19</h1>
-  <h2>События мыши</h2>
+  <h1>SPRINT 02</h1>
+  <h2>Функции и аргументы</h2>
   <div class="tasks">
 
-      <p class="tasks tasks__first">Добавьте на блок .div-1 событие клик и по клику запуск функции t1. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-1. 
+      <p class="tasks tasks__first">Напишите функцию t1, которая принимает два аргумента и выводит в .out-1 случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-1. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
 
       </p>
 
-      <p class="tasks tasks__second">Добавьте на блок .div-2 событие клик и по клику запуск функции t2. Функция должна возвращать true или false в зависимости от того, нажата ли клавиша alt или нет в момент клика. Также, выводите на экран результат. Вывод осуществляется в out-2.
+      <p class="tasks tasks__second">Напишите функцию t2, которая принимает три аргумента (число от, число до и блок, в который нужно вывести данные) и выводит в указанный блок случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-2. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
 
       </p>
 
-      <p class="tasks tasks__third">Добавьте на блок .div-3 событие клик. При клике - увеличивайте ширину блока на 5px. Каждый клик - увеличение ширины на 5px. 10 кликов - на 50px. Ширину выводите в out-3. 
-
+      <p class="tasks tasks__third">Напишите функцию t3, которая принимает два аргумента (число от, число до ) и выводит в блок .out-3 случайное целое число от первого аргумента(включительно) до второго(включительно). Задайте значение по умолчанию для min число 0 для max число 100. Функция запускается по кнопке .b-3. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную. 
+        
       </p>
 
   </div>
 
   <div class="row">
-      <p class="prompt tasks__first" >Please, input the values of array's a1[] elements</p>
+      <p class="prompt tasks__first" >Please, enter the required element for task 1</p>
       <input class="i-1 form form__first" value="" placeholder="0">
-      <p class="prompt tasks__second">Please, input the values of array's a2[] elements</p>
+      <p class="prompt tasks__second">Please, enter the required element for task 2</p>
       <input class="i-2 form form__second" value="" placeholder="0">
-      <!-- <p class="prompt tasks__second">Please, input the values of array's a3[] elements</p>
-      <input class="i-3 form form__third" value="" placeholder="0"> -->
+      <p class="prompt tasks__second">Please, enter the required element for task 3</p>
+      <input class="i-3 form form__third" value="" placeholder="0">
       <button class="b-1 tasks__first">.b-1</button>
       <button class="b-2 tasks__second">.b-2</button>
       <button class="b-3 tasks__third">.b-3</button>
@@ -50,8 +50,6 @@
     <p>Where the dear and the antilope play</p>
   </div>
 </div>
-
-<input type="text" class="place" placeholder="Where the buffalo roam">
   
   <div class="outs">
       <output class="out-1 outs__first" value="">out-1</output>
