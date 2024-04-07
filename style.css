@@ -74,3 +74,6 @@ h2 {
     overflow: hidden;
     text-align: leftr;
     padding: 6px; }
+
+.checkbox {
+  display: block; }

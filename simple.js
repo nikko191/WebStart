@@ -5,6 +5,8 @@ const button_1 = document.querySelector('.b-1');
 const button_2 = document.querySelector('.b-2');
 const button_3 = document.querySelector('.b-3');
 // const button_clear = document.querySelector('.b-clear');
+const button_check = document.querySelector('.check');
+const checkbox = document.querySelector('.ch-3');
 const out_1 = document.querySelector('.out-1');
 const out_2 = document.querySelector('.out-2');
 const out_3 = document.querySelector('.out-3');
@@ -14,26 +16,139 @@ console.log(`-----js script is included------`); //cutting const's zone
 pageEvents();
 
 function pageEvents() {
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
-    }
-
-    button_1.onclick = () =>  {
-        out_1.textContent = getRandomInt(117, 132);
-    }
-
-    console.log ('Please input min-max numbers in HTML-forms for the first and the second tasks')
-    button_2.onclick = () =>  {
-        let minim = parseInt(input_1.value);
-        let maxim = parseInt(input_2.value);
-        out_2.textContent = getRandomInt(minim, maxim);
-    }
-
-    function hello() {}; function e2021() {};
-
+    
 }
+
+// function pageEvents__funcs__05() {
+//     console.log('--------Task 01---------')
+//     console.log('Button 1 to perform, out-1 for out.');
+//     let a = [-1, 'hello', 2, 'hi', -3, true, NaN, 4, -5];
+//     function callMeOne () {
+//         let b = a.map (function callBack1(x) {return x*x*x})
+//         return b
+//     }
+
+//     button_1.onclick = () => {
+//         out_1.textContent = callMeOne()
+//     }
+
+//     console.log('--------Task 02---------')
+//     console.log('Button 2 to perform, out-2 for out.');
+//     function callMeTwo () {
+//         let b = a.map (x => x*x*x)
+//         return b
+//     }
+
+//     button_2.onclick = () => {
+//         out_2.textContent = callMeTwo()
+//     }
+
+//     console.log('--------Task 03---------')
+//     console.log('Button 3 to perform, out-3 for out.');
+//     function callMeThree () {
+//         let b = a.filter (x => (typeof(x) == 'number'))
+//         return b
+//     }
+
+//     button_check.onclick = () => console.log(callMeThree())
+
+//     button_3.onclick = () => {
+//         out_3.textContent = callMeThree()
+//     }
+    
+// }
+
+// function pageEvents__funcs__03() {
+//     console.log('--------Task 01---------')
+//     console.log('Please, enter arguments for the function into the two forms. Button 1 to perform.')
+    
+//     function sum(a,b) {
+//         return a + b
+//     }
+//     button_1.onclick = (a,b) => {
+//         let x = parseInt(input_1.value);
+//         let y = parseInt(input_2.value);
+//         out_1.textContent = sum(x,y)
+//     }
+
+//     console.log('--------Task 02---------')
+//     console.log('Please, enter arguments for the function into the two forms. Button 2 to perform.')
+
+//     function biggest(a,b) {
+//         if (a >b ) return a
+//         else return b
+//     }
+//     button_2.onclick = (a,b) => {
+//         let x = parseInt(input_1.value);
+//         let y = parseInt(input_2.value);
+//         out_1.textContent = biggest(x,y)
+//     }
+
+//     console.log('--------Task 03---------')
+//     console.log('Button 2 to perform, out-3 for out')
+
+//     checkFun = () => { if (checkbox.checked == true) return checkbox.value; else return false}
+
+//     button_check.onclick = () => console.log(checkFun())
+
+//     button_3.onclick = () => { out_3.textContent = checkFun() }
+// }
+
+// function pageEvents__funcs__02() {
+
+//     function getRandomInt(min, max) {
+//         min = Math.ceil(min);
+//         max = Math.floor(max) + 1;
+//         return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
+//     }
+
+//     button_1.onclick = (x, y) =>  {
+//         x = input_1.value;
+//         y = input_2.value;
+//         out_1.textContent = getRandomInt(x,y);
+//     }
+
+//     button_2.onclick = (x, y, z) =>  {
+//         x = input_1.value;
+//         y = input_2.value;
+//         z = input_3.value;
+//         document.querySelector(`.` + `${z}`).textContent = getRandomInt(x,y);
+//     }
+
+//     button_3.onclick = (x, y) =>  {
+//         if ((input_1.value != '') && (input_2.value != '')) {
+//             out_3.textContent = getRandomInt(input_1.value, input_2.value);
+//         } else out_3.textContent = getRandomInt(0, 100);
+//     }
+
+//     button_check.onclick = () => {
+//         out_1.textContent = checkbox.checked;
+//     }
+
+
+// }
+
+// function pageEvents__funcs__01() {
+//     function getRandomInt(min, max) {
+//         min = Math.ceil(min);
+//         max = Math.floor(max);
+//         return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
+//     }
+
+//     button_1.onclick = () =>  {
+//         out_1.textContent = getRandomInt(117, 132);
+//     }
+
+//     console.log ('Please input min-max numbers in HTML-forms for the first and the second tasks')
+//     button_2.onclick = () =>  {
+//         let minim = parseInt(input_1.value);
+//         let maxim = parseInt(input_2.value);
+//         out_2.textContent = getRandomInt(minim, maxim);
+//     }
+
+//     function hello() {}; function e2021() {};
+
+// }
 
 // function pageEvents__js2__23() {
 //     // localStorage.setItem('data', 5);

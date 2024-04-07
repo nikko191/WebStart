@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>SPRINT 02</h1>
-  <h2>Функции и аргументы</h2>
+  <h1>SPRINT 06</h1>
+  <h2>Контекст и функции. Call, apply, bind</h2>
   <div class="tasks">
 
-      <p class="tasks tasks__first">Напишите функцию t1, которая принимает два аргумента и выводит в .out-1 случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-1. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
+      <p class="tasks tasks__first">Запустите функцию t1, с контекстом out-1 с помощью call. Функция должна запускаться при загрузке страницы.
 
       </p>
 
-      <p class="tasks tasks__second">Напишите функцию t2, которая принимает три аргумента (число от, число до и блок, в который нужно вывести данные) и выводит в указанный блок случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-2. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
+      <p class="tasks tasks__second">Напишите анонимную функцию, которая при нажатии кнопки b-2 запускает функцию t1 с контекстом out-2. Используем call.
 
       </p>
 
-      <p class="tasks tasks__third">Напишите функцию t3, которая принимает два аргумента (число от, число до ) и выводит в блок .out-3 случайное целое число от первого аргумента(включительно) до второго(включительно). Задайте значение по умолчанию для min число 0 для max число 100. Функция запускается по кнопке .b-3. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную. 
-        
+      <p class="tasks tasks__third">Запустите функцию max с аргументами 5, 8 и контекстом out-3. Функция должна запускаться при загрузке страницы. Используем call. 
+
       </p>
 
   </div>
 
   <div class="row">
-      <p class="prompt tasks__first" >Please, enter the required element for task 1</p>
+      <!-- <p class="prompt tasks__first" >Please, enter the required element for task 1</p> -->
+      <p class="prompt tasks__first" >Please, enter the first function's argument (number)</p>
       <input class="i-1 form form__first" value="" placeholder="0">
-      <p class="prompt tasks__second">Please, enter the required element for task 2</p>
+      <!-- <p class="prompt tasks__second">Please, enter the required element for task 2</p> -->
+      <p class="prompt tasks__second">Please, enter the second function's argument (number)</p>
       <input class="i-2 form form__second" value="" placeholder="0">
-      <p class="prompt tasks__second">Please, enter the required element for task 3</p>
+      <!-- <p class="prompt tasks__second">Please, enter the required element for task 3</p> -->
+      <p class="prompt tasks__second">Please, enter the third function's argument (block's class name)</p>
       <input class="i-3 form form__third" value="" placeholder="0">
       <button class="b-1 tasks__first">.b-1</button>
       <button class="b-2 tasks__second">.b-2</button>
@@ -50,6 +53,12 @@
     <p>Where the dear and the antilope play</p>
   </div>
 </div>
+
+<div class="checkbox">
+  <input class="ch-3" type="checkbox">
+  <button class="check">check</button>
+</div>
+
   
   <div class="outs">
       <output class="out-1 outs__first" value="">out-1</output>
