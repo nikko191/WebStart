@@ -16,8 +16,175 @@ console.log(`-----js script is included------`); //cutting const's zone
 pageEvents();
 
 function pageEvents() {
+
+    console.log('--------Task 01---------')
+    console.log('Please, input a parameter of the function in the form for the first task. b-1 to perform.')
     
+    console.log('--------Task 02---------')
+    console.log('Please, input a parameter of the function in the form for the second task. b-2 to perform.')
+
+    console.log('--------Task 03---------')
+    console.log('Please, input a parameter (odd/even) of the function in the form for the third task. b-3 to perform.')
+
+
+    button_1.onclick = () => {
+
+    let n = Math.round(+input_1.value);
+    let val = '';
+
+    function r1() {
+
+        val += n + ' ';
+        console.log('n =', n);
+        console.log('val =', val);
+        if (n > 0 ) {
+            n--;
+            r1();
+        }
+        else if (n < 0) {
+            n++;
+            r1();
+        }
+        else return;
+        out_1.textContent = val;
+        }
+
+    r1();
+
+    }
+
+    button_2.onclick = () => {
+
+        let n = Math.round(+input_2.value);
+        let val = '';
+    
+        function r1() {
+    
+            val += n + ' ';
+            console.log('n =', n);
+            console.log('val =', val);
+            if (n > 2 ) {
+                n = n - 2;
+                r1();
+            }
+            else if (n < -2) {
+                n = n + 2;
+                r1();
+            }
+            else n = 0;
+            out_2.textContent = val + ' ' + 0;
+            return;
+            }
+    
+        r1();
+    
+    }
+
+    button_3.onclick = () => {
+
+        let n = Math.round(+input_2.value);
+        let val = '';
+    
+        function r1() {
+    
+            val += n + ' ';
+            console.log('n =', n);
+            console.log('val =', val);
+            if (n > 2 ) {
+                n = n - 2;
+                r1();
+            }
+            else if (n < -2) {
+                n = n + 2;
+                r1();
+            }
+            else n = 0;
+            out_2.textContent = val + ' ' + 0;
+            return;
+            }
+    
+        r1();
+    
+    }
+
+
 }
+
+// function pageEvents__funcs__08() {
+
+//     console.log('--------Task 01---------')
+//     console.log('Please, input two parameters of function in the forms for the first and the secoond tasks. b-1 to perform.')
+
+//     button_1.onclick = () => {
+//         let a = +input_1.value;
+//         let b = +input_2.value;
+//         if (a < b) true; else [a, b] = [b, a];
+//         let variable = a, sum = variable;
+//         console.log('The first number is', variable)
+//         while (variable < b) {
+//             variable++;
+//             console.log('variable =', variable);
+//             sum = sum + variable;
+//             console.log('sum =', sum);
+//         }
+//         out_1.textContent = sum;
+//     }
+
+//     console.log('--------Task 02---------')
+//     console.log('Please, input two parameters of function in the forms for the first and the secoond tasks. b-2 to perform.')
+
+//     button_2.onclick = () => {
+//         let a = +input_1.value;
+//         let b = +input_2.value;
+//         max = Math.max(a,b);
+//         out_2.textContent = max;
+
+//     }
+
+//     console.log('--------Task 03---------')
+//     console.log('Please, input three parameters of function in the forms for the first, second and the third tasks. b-3 to perform.')
+    
+//     let x = +input_1.value;
+//     let y = +input_2.value;
+//     let z = +input_3.value;
+
+//     button_3.onclick = (a, b, c) => {
+//         // let x = +input_1.value;
+//         // let y = +input_2.value;
+//         // let z = +input_3.value;
+//         // a = x, b = y, c = z;
+//         a = 1, b = 0, c = 3;
+//         if (b != 0 ) out_3.textContent = ('a/b = ' + a/b );
+//         else out_3.textContent = c;
+//     }
+
+
+// }
+
+// function pageEvents__funcs__06() {
+
+//     let count = 0;
+
+//     function f1() {
+//         console.log(count);
+//         console.log(this);
+//         this.textContent = 'Hello';
+
+//     }
+
+//     // f1.call(out_1);
+    
+//     button_2.onclick = () => {
+//         f1.call(out_2);
+//     }
+
+//     function max(a,b) {
+//         if (a > b) this.textContent = a;
+//         else this.textContent = b
+//     }
+
+//     max.call(out_3, 9, 8)
+// }
 
 // function pageEvents__funcs__05() {
 //     console.log('--------Task 01---------')
