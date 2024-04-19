@@ -17,100 +17,131 @@ pageEvents();
 
 function pageEvents() {
 
-    console.log('--------Task 01---------')
-    console.log('Please, input a parameter of the function in the form for the first task. b-1 to perform.')
-    
-    console.log('--------Task 02---------')
-    console.log('Please, input a parameter of the function in the form for the second task. b-2 to perform.')
-
-    console.log('--------Task 03---------')
-    console.log('Please, input a parameter (odd/even) of the function in the form for the third task. b-3 to perform.')
-
-
-    button_1.onclick = () => {
-
-    let n = Math.round(+input_1.value);
-    let val = '';
-
-    function r1() {
-
-        val += n + ' ';
-        console.log('n =', n);
-        console.log('val =', val);
-        if (n > 0 ) {
-            n--;
-            r1();
-        }
-        else if (n < 0) {
-            n++;
-            r1();
-        }
-        else return;
-        out_1.textContent = val;
-        }
-
-    r1();
-
-    }
-
-    button_2.onclick = () => {
-
-        let n = Math.round(+input_2.value);
-        let val = '';
-    
-        function r1() {
-    
-            val += n + ' ';
-            console.log('n =', n);
-            console.log('val =', val);
-            if (n > 2 ) {
-                n = n - 2;
-                r1();
-            }
-            else if (n < -2) {
-                n = n + 2;
-                r1();
-            }
-            else n = 0;
-            out_2.textContent = val + ' ' + 0;
-            return;
-            }
-    
-        r1();
-    
-    }
-
-    button_3.onclick = () => {
-
-        let n = Math.round(+input_2.value);
-        let val = '';
-    
-        function r1() {
-    
-            val += n + ' ';
-            console.log('n =', n);
-            console.log('val =', val);
-            if (n > 2 ) {
-                n = n - 2;
-                r1();
-            }
-            else if (n < -2) {
-                n = n + 2;
-                r1();
-            }
-            else n = 0;
-            out_2.textContent = val + ' ' + 0;
-            return;
-            }
-    
-        r1();
-    
-    }
-
-
+    // document.addEventListener('DOMContentLoaded', load) = function() {
+    //     let w = 75;
+    //     button_1.onclick = () => {
+    //         w += 1;
+    //         out_1.style.weigh = w + 'px'
+    //     }
+        
+    // }
 }
 
-// function pageEvents__funcs__08() {
+// function pageEvents__funcs__10() {
+
+//     console.log('--------Task 01---------')
+//     console.log('Please, input a parameter of the function in the form for the first task. b-1 to perform.')
+    
+//     console.log('--------Task 02---------')
+//     console.log('Please, input a parameter of the function in the form for the second task. b-2 to perform.')
+
+//     console.log('--------Task 03---------')
+//     console.log('Please, input a parameter (odd/even) of the function in the form for the third task. b-3 to perform.')
+
+//     function getRandomInt(min, max) {
+//         min = Math.ceil(min);
+//         max = Math.floor(max) + 1;
+//         return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
+//     }
+
+//     button_1.onclick = () => {
+
+//     let n = Math.round(+input_1.value);
+//     let val = '';
+
+//     function r1() {
+
+//         val += n + ' ';
+//         console.log('n =', n);
+//         console.log('val =', val);
+//         if (n > 0 ) {
+//             n--;
+//             r1();
+//         }
+//         else if (n < 0) {
+//             n++;
+//             r1();
+//         }
+//         else return;
+//         out_1.textContent = val;
+//         }
+
+//     r1();
+
+//     }
+
+//     button_2.onclick = () => {
+
+//         let n = Math.round(+input_2.value);
+//         let val = '';
+    
+//         function r1() {
+    
+//             val += n + ' ';
+//             console.log('n =', n);
+//             console.log('val =', val);
+//             if (n > 2 ) {
+//                 n = n - 2;
+//                 r1();
+//             }
+//             else if (n < -2) {
+//                 n = n + 2;
+//                 r1();
+//             }
+//             else n = 0;
+//             out_2.textContent = val + ' ' + 0;
+//             return;
+//             }
+    
+//         r1();
+    
+//     }
+
+//     button_3.onclick = () => {
+
+//         let arg = input_3.value;
+//         let req; 
+//         if (arg == 'even') req = true;
+//         else if (arg == 'odd') req = false;
+//         else {return out_3.textContent = 'There is wrong argument entered. Enter the argument again'};
+//         let parity;
+    
+//         function r3() {
+    
+//             let num = getRandomInt(0, 100);
+//             if (num%2 == 0) parity = true; else parity = false;
+//             if (req == parity) out_3.textContent = num; else out_3.textContent = num + 1;  
+//             let obj = 
+//             {'запрос' : req,
+//             'случайное число' : num,
+//             'чётность' : parity
+//             }
+//             console.table(obj);
+//         }
+
+//         function req3() {
+//             let num = getRandomInt(0, 100);
+//             if (num%2 == 0) parity = true; else parity = false;
+//             let corr = (req == parity);
+//             if (corr == true) descr = 'The cycle completed.'; else descr = 'The cycle continues...'
+//             let obj = 
+//             {'запрос' : req,
+//             'случайное число' : num,
+//             'чётность' : parity,
+//             'соотвестствие' : corr,
+//             'описание' : descr
+//             }
+//             console.table(obj);
+//             if (req == parity) {return out_3.textContent = num} else req3();
+//         }
+
+//         req3();
+
+//     }
+
+// }
+
+// function pageEvents__funcs__08() {   
 
 //     console.log('--------Task 01---------')
 //     console.log('Please, input two parameters of function in the forms for the first and the secoond tasks. b-1 to perform.')
