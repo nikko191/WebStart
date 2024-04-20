@@ -16,16 +16,65 @@ console.log(`-----js script is included------`); //cutting const's zone
 pageEvents();
 
 function pageEvents() {
+    let a1 = [34, 23, -34, 65, 3, -17];
+    let a2 = [34, -5, 10, 1, -91, 54, 8];
 
-    // document.addEventListener('DOMContentLoaded', load) = function() {
-    //     let w = 75;
-    //     button_1.onclick = () => {
-    //         w += 1;
-    //         out_1.style.weigh = w + 'px'
-    //     }
-        
-    // }
+    button_1.onclick = () => {
+        let val = +input_1.value;
+        console.log(a1);
+        console.log(val);
+        out_1.textContent = a1.indexOf(val);
+    }
+
+    button_2.onclick = () => {
+        let val = +input_2.value;
+        console.log(a2);
+        console.log(val);
+        if (a2.indexOf(val) != -1) out_2.textContent = a2.indexOf(val);
+        else out_2.textContent = false;
+    }
+
+    button_3.onclick = () => {
+        let val = +input_3.value;
+        console.log(a1);
+        console.log(val);
+        if (a1.indexOf(val) != -1) out_3.textContent = true;
+        else out_3.textContent = false;
+    }
 }
+
+// function pageEvents__funcs__12() {
+
+//     window.addEventListener('load',
+//         function (event) {
+//             let widthSize = 75;
+//             let heightSize = 40;
+//             let hideFirst = hide();
+            
+//             function hide(){
+//                 let count = 0;
+//                 console.log('The first hide-function is running...');
+//                 return function() {
+//                     console.log('The second hide-function is running...')
+//                     count += 1;
+//                     return out_3.textContent = count;
+//                 }
+//             }
+
+//             button_1.onclick = () => {
+//                 widthSize += 5;
+//                 out_1.style.width = widthSize + 'px';
+//             }
+
+//             button_2.onclick = () => {
+//                 heightSize += 5;
+//                 out_1.style.height = heightSize + 'px';
+//             }
+
+//             button_3.onclick = () => hideFirst();
+//         });
+
+// }
 
 // function pageEvents__funcs__10() {
 
