@@ -16,32 +16,67 @@ console.log(`-----js script is included------`); //cutting const's zone
 pageEvents();
 
 function pageEvents() {
+
+    console.log('--------Task 01---------')
+    console.log('Please, the value in the form for the first task. b-1 to perform.')
+    
+    console.log('--------Task 02---------')
+    console.log('Please, the value in the form for the second task. b-2 to perform.')
+
+    console.log('--------Task 03---------')
+    console.log('Please, the value in the form for the third task. b-3 to perform.')
+
     let a1 = [34, 23, -34, 65, 3, -17];
     let a2 = [34, -5, 10, 1, -91, 54, 8];
 
+    console.log('a1 =', a1)
+    console.log('a2 =', a2)
+
     button_1.onclick = () => {
         let val = +input_1.value;
-        console.log(a1);
         console.log(val);
-        out_1.textContent = a1.indexOf(val);
+        console.log(a1)
+        return out_1.textContent = (a1.includes(val) == true);
     }
 
     button_2.onclick = () => {
         let val = +input_2.value;
-        console.log(a2);
-        console.log(val);
-        if (a2.indexOf(val) != -1) out_2.textContent = a2.indexOf(val);
-        else out_2.textContent = false;
+        for (let i=0; i < a2.length; I++){
+            if(a2[i] == val) return out_1.textContent = (`a2[{i}] = {val}`);
+            else return false
+        }
+
     }
 
-    button_3.onclick = () => {
-        let val = +input_3.value;
-        console.log(a1);
-        console.log(val);
-        if (a1.indexOf(val) != -1) out_3.textContent = true;
-        else out_3.textContent = false;
-    }
 }
+
+// function pageEvents__mass__01() {
+//     let a1 = [34, 23, -34, 65, 3, -17];
+//     let a2 = [34, -5, 10, 1, -91, 54, 8];
+
+//     button_1.onclick = () => {
+//         let val = +input_1.value;
+//         console.log(a1);
+//         console.log(val);
+//         out_1.textContent = a1.indexOf(val);
+//     }
+
+//     button_2.onclick = () => {
+//         let val = +input_2.value;
+//         console.log(a2);
+//         console.log(val);
+//         if (a2.indexOf(val) != -1) out_2.textContent = a2.indexOf(val);
+//         else out_2.textContent = false;
+//     }
+
+//     button_3.onclick = () => {
+//         let val = +input_3.value;
+//         console.log(a1);
+//         console.log(val);
+//         if (a1.indexOf(val) != -1) out_3.textContent = true;
+//         else out_3.textContent = false;
+//     }
+// }
 
 // function pageEvents__funcs__12() {
 
