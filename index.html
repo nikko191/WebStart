@@ -11,15 +11,15 @@
   <h2>Методы массивов. Includes</h2>
   <div class="tasks">
 
-      <p class="tasks tasks__first">По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью includes ищет данный элемент в массиве a1. Выводит в out-1 результат работы метода.
+      <p class="tasks tasks__first">По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью push добавляет полученную из input строку в массив a1. Функция выводит массив a1 в консоль.
 
       </p>
 
-      <p class="tasks tasks__second">По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 и с помощью includes проверяет наличие подобного элемента в массиве a2. Выводит в out-2 false, если такого элемента нет в массиве, и ИНДЕКС элемента если есть. Констатация наличия выполняется через includes. Нахождение индекса либо через indexOf или через цикл. Сравните данную задачу с задачей 2 из юнита 1. Подумайте какой из методов: includes, indexOf более удобен для данной задачи.
+      <p class="tasks tasks__second">По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 (число). С помощью push число и его третья степень ( куб) добавляются в массив a2. Обратите внимание, что добавление двух чисел нужно выполнить с помощью одного push. Функция выводит a2 в консоль.
 
       </p>
 
-      <p class="tasks tasks__third">По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью includes ищет данный элемент во вложенных массивах массива a3. Выводит в out-3 false, если такого элемента нет и true если есть. Обратите внимание! Только числа!
+      <p class="tasks tasks__third">По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью push добавляет значение в массив a3. Изучите вывод в консоль. Разберитесь, что возвращает метод push.
         
       </p>
 
@@ -27,13 +27,13 @@
 
   <div class="row">
       <!-- <p class="prompt tasks__first" >Please, enter the required element for task 1</p> -->
-      <p class="prompt tasks__first" >Please, enter the first function's argument (number)</p>
+      <p class="prompt tasks__first" >Please, enter the value of the parameter for the first task</p>
       <input class="i-1 form form__first" value="" placeholder="0">
       <!-- <p class="prompt tasks__second">Please, enter the required element for task 2</p> -->
-      <p class="prompt tasks__second">Please, enter the second function's argument (number)</p>
+      <p class="prompt tasks__second">Please, enter the value of the parameter for the second task</p>
       <input class="i-2 form form__second" value="" placeholder="0">
       <!-- <p class="prompt tasks__second">Please, enter the required element for task 3</p> -->
-      <p class="prompt tasks__second">Please, enter the third function's argument (block's class name)</p>
+      <p class="prompt tasks__second">Please, enter the value of the parameter for the third task</p>
       <input class="i-3 form form__third" value="" placeholder="0">
       <button class="b-1 tasks__first">.b-1</button>
       <button class="b-2 tasks__second">.b-2</button>

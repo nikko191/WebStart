@@ -13,42 +13,105 @@ const out_3 = document.querySelector('.out-3');
 
 console.log(`-----js script is included------`); //cutting const's zone
 
+console.log('--------Task 01---------')
+console.log('Please, input the value in the form for the first task. b-1 to perform.')
+
+console.log('--------Task 02---------')
+console.log('Please, input the value in the form for the second task. b-2 to perform.')
+
+console.log('--------Task 03---------')
+console.log('Please, input the value in the form for the third task. b-3 to perform.')
+
 pageEvents();
 
 function pageEvents() {
 
-    console.log('--------Task 01---------')
-    console.log('Please, the value in the form for the first task. b-1 to perform.')
-    
-    console.log('--------Task 02---------')
-    console.log('Please, the value in the form for the second task. b-2 to perform.')
-
-    console.log('--------Task 03---------')
-    console.log('Please, the value in the form for the third task. b-3 to perform.')
-
-    let a1 = [34, 23, -34, 65, 3, -17];
-    let a2 = [34, -5, 10, 1, -91, 54, 8];
-
-    console.log('a1 =', a1)
-    console.log('a2 =', a2)
-
+    let a1 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else']
     button_1.onclick = () => {
-        let val = +input_1.value;
-        console.log(val);
         console.log(a1)
-        return out_1.textContent = (a1.includes(val) == true);
+            a1.push(String(input_1.value))
+        
     }
-
-    button_2.onclick = () => {
-        let val = +input_2.value;
-        for (let i=0; i < a2.length; I++){
-            if(a2[i] == val) return out_1.textContent = (`a2[{i}] = {val}`);
-            else return false
-        }
-
-    }
-
 }
+
+// function pageEvents__mass__02() {
+
+//     let a1 = [34, 23, -34, 65, 3, -17];
+//     let a2 = [34, -5, 10, 1, -91, 54, 8];
+//     let a3 = [[10, 20, 30], [11, 12, 13], [-3, 0, 7], a1, [], a2]
+
+//     console.log('a1 =', a1)
+//     console.log('a2 =', a2)
+//     console.log('a3 =', a3)
+
+//     button_1.onclick = () => {
+
+//         let val = +input_1.value;
+
+//         if (
+//             (input_1.value.trim() == '')
+//             || (typeof(val) != 'number')
+//             || (Number.isNaN(val))
+//             )
+            
+//             return out_1.textContent = 'There\'s wrong value in the input\'s form';
+
+//         console.log(val);
+//         console.log(a1)
+//         return out_1.textContent = (a1.includes(val) == true);
+//     }
+
+//     button_2.onclick = () => {
+
+//         let val = +input_2.value;
+
+//         if (
+//             (input_2.value.trim() == '')
+//             || (typeof(val) != 'number')
+//             || (Number.isNaN(val))
+//             )
+
+//             return out_2.textContent = 'There\'s wrong value in the input\'s form';
+
+//         let i = 0;
+//         if (a2.includes(val)) {
+//             a2.forEach((elem, index) => {
+//                 if(a2[i] == val) return out_2.textContent = (`a2[${i}] = ${val}`);
+//                 else i++; 
+//             })
+//         }
+//         else return out_2.textContent = a2.includes(val)
+
+//     }
+
+//     button_3.onclick = () => {
+
+//         let val = +input_3.value;
+
+//         if (
+//             (input_3.value.trim() == '')
+//             || (typeof(val) != 'number')
+//             || (Number.isNaN(val))
+//             )
+            
+//             return out_3.textContent = 'There\'s wrong value in the input\'s form';
+
+//         let i = 0;
+//         a3.forEach((elem, index) => {
+//         if (a3[i].includes(val)) {
+//             let k = 0;
+//             a3[i].forEach((elem, index) => {
+//                 if(a3[i][k] == val) return out_3.textContent = (`a3[${i}][${k}] = ${val}`);
+//                 else k++
+//             })
+//         }
+//         else out_3.textContent = a3[i].includes(val), i++;
+
+//         });
+
+//     }
+
+// }
 
 // function pageEvents__mass__01() {
 //     let a1 = [34, 23, -34, 65, 3, -17];
@@ -112,15 +175,6 @@ function pageEvents() {
 // }
 
 // function pageEvents__funcs__10() {
-
-//     console.log('--------Task 01---------')
-//     console.log('Please, input a parameter of the function in the form for the first task. b-1 to perform.')
-    
-//     console.log('--------Task 02---------')
-//     console.log('Please, input a parameter of the function in the form for the second task. b-2 to perform.')
-
-//     console.log('--------Task 03---------')
-//     console.log('Please, input a parameter (odd/even) of the function in the form for the third task. b-3 to perform.')
 
 //     function getRandomInt(min, max) {
 //         min = Math.ceil(min);
@@ -225,10 +279,7 @@ function pageEvents() {
 
 // }
 
-// function pageEvents__funcs__08() {   
-
-//     console.log('--------Task 01---------')
-//     console.log('Please, input two parameters of function in the forms for the first and the secoond tasks. b-1 to perform.')
+// function pageEvents__funcs__08() {
 
 //     button_1.onclick = () => {
 //         let a = +input_1.value;
