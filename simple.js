@@ -22,17 +22,138 @@ console.log('Please, input the value in the form for the second task. b-2 to per
 console.log('--------Task 03---------')
 console.log('Please, input the value in the form for the third task. b-3 to perform.')
 
+    let a1 = [34, 1, 23, -34, 65, -4, 3, -17, 18, 0];
+    let a2 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else'];
+    let a3 = [2, "hello", 3, "hi", 4, "Mazai"];
+    let a4 = [1, 2, 3, 4];
+
 pageEvents();
 
 function pageEvents() {
 
-    let a1 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else']
+    let str = "\\__this is the string__/";
+    let mySet = new Set();
+    a2.forEach(item => mySet.add(item));
+
     button_1.onclick = () => {
-        console.log(a1)
-            a1.push(String(input_1.value))
-        
+        console.log(mySet);
+        console.log(
+            Array.isArray(str), Array.isArray(mySet),
+            Array.isArray(a1), Array.isArray(a2)
+        );
+        console.log(typeof(mySet), typeof(a1))
+
     }
+
+    button_2.onclick = () => {
+
+        function iArray(param) {
+            console.log(param);
+            console.log(`Is the param an array?`)
+            try {
+                param.push('new elem');
+                console.log(`Param is array`)
+             }
+             catch (param) {
+               console.log(`Error. Param is not an array`);
+             }
+        }
+        
+        iArray(a1);
+        iArray(mySet);
+        iArray(str);
+        iArray([]);
+        iArray({})
+
+    }
+
+    button_3.onclick = () => {
+        let param = a4;
+        console.log(param);
+        square = (a) => a**2;
+        param.reduce((accum, item,) => console.log(accum, item), 'str');   
+    }
+
 }
+
+// function pageEvents__mass__06() {
+
+//     button_1.onclick = () => {
+
+//         console.log(a1);
+//         a1_even = a1.filter(element => (element%2 == 0));
+//         console.log(a1_even)
+//     }
+
+//     button_2.onclick = () => {
+
+//         console.log(a1);
+//         a1_evenIndex = a1.filter(element => (a1.indexOf(element)%2 == 0));
+//         console.log(a1_evenIndex)
+//     }
+
+//     button_3.onclick = () => {
+        
+//         console.log(a1);
+//         let a1_indexes = [];
+//         let a1_moreThan = a1.filter(element => (element > 4));
+//         console.log(a1_moreThan);
+//         for (let i = 0; i < a1_moreThan.length; i++) {
+
+//             a1_indexes.push(a1.indexOf(a1_moreThan[i]));
+//         }
+        
+//         // console.log(a1.indexOf(a1_moreThan[1]));
+//         console.log(a1_indexes)
+//     }
+
+// }
+
+    // function pageEvents__mass__04() {
+
+    //     button_1.onclick = () => {
+    //         console.log(a1);
+    //         a1.unshift(input_1.value);
+    //         console.log(a1);
+    //         return a1
+    //     }
+
+    //     button_2.onclick = () => {
+    //         console.log(a2);
+    //         a2.unshift(+input_2.value, (+input_2.value)**3);
+    //         console.log(a2);
+    //     }
+
+    //     button_3.onclick = () => {
+    //         console.log(a2);
+    //         console.log(a2.unshift(+input_3.value));
+    //         console.log(a2)
+    //     }
+    // }
+
+// function pageEvents__mass__03() {
+
+//     let a1 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else'];
+//     let a2 = [34, 23, -34, 65, 3, -17];
+
+//     button_1.onclick = () => {
+//         console.log(a1);
+//         a1.push(String(input_1.value));
+//         console.log(a1)
+//     }
+
+//     button_2.onclick = () => {
+//         console.log(a2);
+//         a2.push(+(input_2.value), +((input_2.value**3)));
+//         console.log(a2);
+//     }
+
+//     button_3.onclick = () => {
+//         console.log(a2);
+//         let value = input_3.value;
+//         console.log(a2.push(value));
+//     }
+// }
 
 // function pageEvents__mass__02() {
 
