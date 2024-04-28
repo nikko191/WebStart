@@ -13,68 +13,178 @@ const out_3 = document.querySelector('.out-3');
 
 console.log(`-----js script is included------`); //cutting const's zone
 
-console.log('--------Task 01---------')
+console.log('--------Task 01 (default)---------')
 console.log('Please, input the value in the form for the first task. b-1 to perform.')
 
-console.log('--------Task 02---------')
+console.log('--------Task 02 (default)---------')
 console.log('Please, input the value in the form for the second task. b-2 to perform.')
 
-console.log('--------Task 03---------')
+console.log('--------Task 03 (default)---------')
 console.log('Please, input the value in the form for the third task. b-3 to perform.')
+console.log('++++++++++++++++++++++++++++++++++')
 
     let a1 = [34, 1, 23, -34, 65, -4, 3, -17, 18, 0];
     let a2 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else'];
     let a3 = [2, "hello", 3, "hi", 4, "Mazai"];
     let a4 = [1, 2, 3, 4];
+    let a1_ = [13, 15, 22, 23, 26, 35, 72, 94, 95, 99, 101, 117, 128, 256, 321, 432];
+    let str_1 = 'Hello, ';
+    let str_2 = 'world!'
 
 pageEvents();
 
 function pageEvents() {
 
-    let str = "\\__this is the string__/";
-    let mySet = new Set();
-    a2.forEach(item => mySet.add(item));
+    console.log('Please, input the elemens \"_from\" and \"_to\" into the first and second forms.');
+    console.log('________________Go________________')
+
+    function sortNumbers(mass) {
+        mass = mass.sort((a, b) => { return a - b});
+        console.log('The array is sorted: ', mass);
+    }
 
     button_1.onclick = () => {
-        console.log(mySet);
-        console.log(
-            Array.isArray(str), Array.isArray(mySet),
-            Array.isArray(a1), Array.isArray(a2)
-        );
-        console.log(typeof(mySet), typeof(a1))
+        
+        let a1_from = +input_1.value;
+        let a1_to = +input_2.value;
 
+        console.log('a1_from =', a1_from);
+        console.log('a1_to =', a1_to);
+
+        sortNumbers(a1);
+        
+        a_res = a1.concat(a1_);
+
+        console.log('The arrays are concated: ', a_res);
+
+        sortNumbers(a_res);
+
+        console.log('a1_ =', a1_);
+        console.log('a1_from =', a1_from);
+        console.log('a1_to =', a1_to);
+        for (let i = 0; i < a1_.length;) {
+            if((a1_[i] > a1_from) && (a1_[i] < a1_to)) {
+                return out_1.textContent = a1_[i];
+            }
+            else i++;
+            if (a1_[i] >= a1_to) return out_1.textContent = 'undefined';
+        }
     }
 
     button_2.onclick = () => {
-
-        function iArray(param) {
-            console.log(param);
-            console.log(`Is the param an array?`)
-            try {
-                param.push('new elem');
-                console.log(`Param is array`)
-             }
-             catch (param) {
-               console.log(`Error. Param is not an array`);
-             }
-        }
         
-        iArray(a1);
-        iArray(mySet);
-        iArray(str);
-        iArray([]);
-        iArray({})
+        sortNumbers(a1);
 
+        let a1_from = +input_1.value;
+        let a1_to = +input_2.value;
+
+        console.log('a1_from =', a1_from);
+        console.log('a1_to =', a1_to);
+
+        function interval(elem, index, arr) {
+            if ((elem > a1_from) && (elem < a1_to)) return out_2.textContent = elem;
+            else return out_2.textContent = false;
+        }
+        console.log(a1.find(interval))
     }
 
     button_3.onclick = () => {
-        let param = a4;
-        console.log(param);
-        square = (a) => a**2;
-        param.reduce((accum, item,) => console.log(accum, item), 'str');   
+
+        sortNumbers(a1);
+
+        let a1_from = +input_1.value;
+        let a1_to = +input_2.value;
+
+        console.log('a1_from =', a1_from);
+        console.log('a1_to =', a1_to);
+
+        let a3_res = a1_;
+        function clear(arr) {
+            while (arr.length > 1) arr.pop();
+            console.log('The array is cleared: ', arr)
+        }
+
+        clear(a3_res);
+
+        a1_filtered = a1.filter(elem => ((elem > a1_from) && (a1_to)));
+        a3_res = a1_filtered.concat(a3_res);
+
+        console.log('resulted array: ', a3_res);
+        out_3.textContent = a3_res[0];
+
     }
+        
+
+    
 
 }
+
+// function pageEvents__mass__08() {
+
+//     button_1.onclick = () => {
+//         console.log('a1 =', a1);
+//         console.log('a2 =', a2);
+//         let res_1 = a1.concat(a2);
+//         console.log('res_1(a1, a2) =', res_1);
+//     }
+
+//     button_2.onclick = () => {
+//         let res_2 = str_1.concat(str_2);
+//         console.log(res_2)
+//     }
+
+//     button_3.onclick = () => {
+//         let res_3 = str_1.concat(a3);
+//         console.log(res_3)
+//     }
+// }
+
+// function pageEvents__mass__07() {
+
+//     let str = "\\__this is the string__/";
+//     let mySet = new Set();
+//     a2.forEach(item => mySet.add(item));
+
+//     button_1.onclick = () => {
+//         console.log(mySet);
+//         console.log(
+//             Array.isArray(str), Array.isArray(mySet),
+//             Array.isArray(a1), Array.isArray(a2)
+//         );
+//         console.log(typeof(mySet), typeof(a1))
+
+//     }
+
+//     button_2.onclick = () => {
+
+//         function iArray(param) {
+//             console.log(param);
+//             console.log(`Is the param an array?`)
+//             try {
+//                 param.push('new elem');
+//                 console.log(`Param is array`)
+//              }
+//              catch (param) {
+//                console.log(`Error. Param is not an array`);
+//              }
+//         }
+        
+//         iArray(a1);
+//         iArray(mySet);
+//         iArray(str);
+//         iArray([]);
+//         iArray({})
+
+//     }
+
+//     button_3.onclick = () => {
+//         let param = a4;
+//         console.log(param);
+//         square = (a) => a**2;
+//         param.reduce((accum, item,) => console.log(accum, item), 'str');   
+//     }
+
+// }
 
 // function pageEvents__mass__06() {
 
