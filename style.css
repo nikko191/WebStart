@@ -68,11 +68,8 @@ h2 {
   .divs__third {
     background-color: #40e379; }
   .divs__first, .divs__second, .divs__third {
-    height: autp;
     width: 5rem;
     display: inline-block;
-    overflow: hidden;
-    text-align: leftr;
     padding: 6px; }
 
 .checkbox {

@@ -23,101 +23,183 @@ console.log('--------Task 03 (default)---------')
 console.log('Please, input the value in the form for the third task. b-3 to perform.')
 console.log('++++++++++++++++++++++++++++++++++')
 
-    let a1 = [34, 1, 23, -34, 65, -4, 3, -17, 18, 0];
-    let a2 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else'];
-    let a3 = [2, "hello", 3, "hi", 4, "Mazai"];
-    let a4 = [1, 2, 3, 4];
-    let a1_ = [13, 15, 22, 23, 26, 35, 72, 94, 95, 99, 101, 117, 128, 256, 321, 432];
-    let str_1 = 'Hello, ';
-    let str_2 = 'world!'
+    // let a1 = [34, 1, 23, -34, 65, -4, 3, -17, 18, 0];
+    // let a2 = ['hello', 'hi', '3333', '!@#$%^&*', 'Nothing else'];
+    // let a3 = [2, "hello", 3, "hi", 4, "Mazai"];
+    // let a4 = [1, 2, 3, 4];
+    // let a1_ = [13, 15, 22, 23, 26, 35, 72, 94, 95, 99, 101, 117, 128, 256, 321, 432];
+    // let str_1 = 'Hello, ';
+    // let str_2 = 'world!'
+
+    // console.log('For the second task, please, input the elemens \"_from\" and \"_to\" into the first and second forms.');
+    // console.log('________________Go________________')
+
 
 pageEvents();
 
-function pageEvents() {
+// function pageEvents__mass__13() {
 
-    console.log('Please, input the elemens \"_from\" and \"_to\" into the first and second forms.');
-    console.log('________________Go________________')
+//     let a1 = [13, [4, 5], 22, [6, 7], [26, 35, 72]];
+//     let a2 = [[7, 8, 9], [-2, [11, [23, 18], 24], -5], [0, -6, 24, 1, 2, 4, 3], [21], [0.1, 15, 0.23424234241]]
 
-    function sortNumbers(mass) {
-        mass = mass.sort((a, b) => { return a - b});
-        console.log('The array is sorted: ', mass);
-    }
 
-    button_1.onclick = () => {
+//     button_1.onclick = () => {
+
+//         let a1_res = a1.flat();
+//         out_1.textContent = a1_res;
+//     }
+
+//     button_2.onclick = () => {
+
+//         let a2_res = a2.flat();
+//         console.log(a2_res);
+//         out_2.innerHTML = a2_res;
+//     }
+
+//     button_3.onclick = () => {
+
+//         let a2_res = a2.flat();
+//         console.log(a2_res);
+//         out_3.innerHTML = a2_res.join(' ');
+//     }
+// }
+
+// function pageEvents__mass__12() {
+
+//     let a1 = [22, 33, 44, 55, 66, 77, 88];
+//     let a2 = [13, 15, 22, 23, 26, 35, 72, 94, 95, 99, 101, 117, 128, 256, 321, 432];
+//     let a3 = [[7, 8, 9], [-2, 11, 23, -5], [0, -6, 24, 1, 2, 4, 3], [21], [0.1, 15, 0.23424234241]]
+//     let a1_from = 7;
+//     let a1_to = 100;
+
+//     button_1.onclick = () => {
+
+//         out_1.textContent = a1.every((elem) => ((elem > a1_from) && (elem < a1_to)));
+//     }
+
+//     button_2.onclick = () => {
+
+//         let a2_from = +input_1.value;
+//         let a2_to = +input_2.value;
+//         console.log(a2);
+//         out_2.textContent = a2.every((elem) => ((elem > a2_from) && (elem < a2_to)));
+//     }
+
+//     button_3.onclick = () => {
+
+//         console.log('a3 =', a3)
+//         out_3.value = a3.every((elem) => (elem.reduce((accum = 0, a) => accum + a)) > 20);
+//         console.log(a3[4].reduce((accum = 0, elem) => accum + elem) > 1);
+//     }
+
+// }
+
+// function pageEvents__mass_11() {
+
+//     let a1 = [13, 15, 22, 23, 26, 35, 72];
+
+//     button_1.onclick = () => {
+
+//         out_1.textContent = a1.join();
+//     }
+
+//     button_2.onclick = () => {
+
+//         out_2.textContent = a1.join('');
+//     }
+
+//     button_3.onclick = () => {
+
+//         out_3.textContent = a1.join('=')
+//     }
+
+// }
+
+// function pageEvents__mass__09() {
+
+//     console.log('Please, input the elemens \"_from\" and \"_to\" into the first and second forms.');
+//     console.log('________________Go________________')
+
+//     function sortNumbers(mass) {
+//         mass = mass.sort((a, b) => { return a - b});
+//         console.log('The array is sorted: ', mass);
+//     }
+
+//     button_1.onclick = () => {
         
-        let a1_from = +input_1.value;
-        let a1_to = +input_2.value;
+//         let a1_from = +input_1.value;
+//         let a1_to = +input_2.value;
 
-        console.log('a1_from =', a1_from);
-        console.log('a1_to =', a1_to);
+//         console.log('a1_from =', a1_from);
+//         console.log('a1_to =', a1_to);
 
-        sortNumbers(a1);
+//         sortNumbers(a1);
         
-        a_res = a1.concat(a1_);
+//         a_res = a1.concat(a1_);
 
-        console.log('The arrays are concated: ', a_res);
+//         console.log('The arrays are concated: ', a_res);
 
-        sortNumbers(a_res);
+//         sortNumbers(a_res);
 
-        console.log('a1_ =', a1_);
-        console.log('a1_from =', a1_from);
-        console.log('a1_to =', a1_to);
-        for (let i = 0; i < a1_.length;) {
-            if((a1_[i] > a1_from) && (a1_[i] < a1_to)) {
-                return out_1.textContent = a1_[i];
-            }
-            else i++;
-            if (a1_[i] >= a1_to) return out_1.textContent = 'undefined';
-        }
-    }
+//         console.log('a1_ =', a1_);
+//         console.log('a1_from =', a1_from);
+//         console.log('a1_to =', a1_to);
+//         for (let i = 0; i < a1_.length;) {
+//             if((a1_[i] > a1_from) && (a1_[i] < a1_to)) {
+//                 return out_1.textContent = a1_[i];
+//             }
+//             else i++;
+//             if (a1_[i] >= a1_to) return out_1.textContent = 'undefined';
+//         }
+//     }
 
-    button_2.onclick = () => {
+//     button_2.onclick = () => {
         
-        sortNumbers(a1);
+//         sortNumbers(a1);
 
-        let a1_from = +input_1.value;
-        let a1_to = +input_2.value;
+//         let a1_from = +input_1.value;
+//         let a1_to = +input_2.value;
 
-        console.log('a1_from =', a1_from);
-        console.log('a1_to =', a1_to);
+//         console.log('a1_from =', a1_from);
+//         console.log('a1_to =', a1_to);
 
-        function interval(elem, index, arr) {
-            if ((elem > a1_from) && (elem < a1_to)) return out_2.textContent = elem;
-            else return out_2.textContent = false;
-        }
-        console.log(a1.find(interval))
-    }
+//         function interval(elem, index, arr) {
+//             if ((elem > a1_from) && (elem < a1_to)) return out_2.textContent = elem;
+//             else return out_2.textContent = false;
+//         }
+//         console.log(a1.find(interval))
+//     }
 
-    button_3.onclick = () => {
+//     button_3.onclick = () => {
 
-        sortNumbers(a1);
+//         sortNumbers(a1);
 
-        let a1_from = +input_1.value;
-        let a1_to = +input_2.value;
+//         let a1_from = +input_1.value;
+//         let a1_to = +input_2.value;
 
-        console.log('a1_from =', a1_from);
-        console.log('a1_to =', a1_to);
+//         console.log('a1_from =', a1_from);
+//         console.log('a1_to =', a1_to);
 
-        let a3_res = a1_;
-        function clear(arr) {
-            while (arr.length > 1) arr.pop();
-            console.log('The array is cleared: ', arr)
-        }
+//         let a3_res = a1_;
+//         function clear(arr) {
+//             while (arr.length > 1) arr.pop();
+//             console.log('The array is cleared: ', arr)
+//         }
 
-        clear(a3_res);
+//         clear(a3_res);
 
-        a1_filtered = a1.filter(elem => ((elem > a1_from) && (a1_to)));
-        a3_res = a1_filtered.concat(a3_res);
+//         a1_filtered = a1.filter(elem => ((elem > a1_from) && (a1_to)));
+//         a3_res = a1_filtered.concat(a3_res);
 
-        console.log('resulted array: ', a3_res);
-        out_3.textContent = a3_res[0];
+//         console.log('resulted array: ', a3_res);
+//         out_3.textContent = a3_res[0];
 
-    }
+//     }
         
 
     
 
-}
+// }
 
 // function pageEvents__mass__08() {
 
